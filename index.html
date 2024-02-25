@@ -12,48 +12,68 @@
 <body>
     <div class="left-container">
         <div class="logo-container">
-            <img src="" alt="">
+            <img class="logo" src="resources/logo.svg" alt="Blankly Logo">
         </div>
         <div class="graphic-container">
-            <img src="" alt="">
+            <img class="graphic" src="resources/vector-graphic.svg" alt="Sign-up form illustration">
         </div>
-        <a class="attribution" href="https://storyset.com/phone">Phone illustrations by Storyset</a>
+        <p class="attribution">Phone illustrations by <a class="attribution-link"
+                href="https://storyset.com/phone">Storyset</a></p>
     </div>
 
     <div class="right-container">
         <div class="copy-container">
-            <p class="copy-text">copywrite text</p>
-            <p class="cta">CTA</p>
+            <p class="copy-text">Want us not to send you any e-mails, messages, calls or any other form of contact,
+                whatsoever?</p>
+            <p class="cta">Then sign up right now!</p>
         </div>
         <div class="form-container">
             <form action="" method="get" class="sign-up-form">
                 <div class="form-field">
-                    <label for="first-name">First Name</label>
+                    <label for="first-name">
+                        <span>First Name</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
                     <input id="first-name" name="first-name" type="text" />
                 </div>
 
                 <div class="form-field">
-                    <label for="last-name">Last Name </label>
+                    <label for="last-name">
+                        <span>Last Name</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
                     <input id="last-name" name="last-name" type="text" />
                 </div>
 
                 <div class='form-field'>
-                    <label for='email'>Email</label>
+                    <label for='email'>
+                        <span>E-mail</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
                     <input id='email' name='email' type='email' />
                 </div>
 
                 <div class="form-field">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">
+                        <span>Phone Number</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
                     <input id="phone" name="phone" type="tel" />
                 </div>
 
                 <div class="form-field">
-                    <label for="password">Password</label>
+                    <label for="password">
+                        <span>Password</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
                     <input id="password" name="password" type="password" />
                 </div>
 
                 <div class="form-field">
-                    <label for="confirm-password">Confirm Password</label>
+                    <label for="confirm-password">
+                        <span> Confirm Password</span>
+                        <strong><span aria-label="required">*</span></strong>
+                    </label>
                     <input id="confirm-password" name="confirm-password" type="password" />
                 </div>
 

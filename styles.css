@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    /* blues */
+    --blue-darker: #073BB0;
+    --blue-darkish: #0444D1;
+    --blue: #004FFF;
+    --light-blue: #E7F0FF;
+
+    --red: #931621;
+    --black: #050505;
+    --white: rgb(255, 255, 255);
+}
+
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    color: var(--black);
+    height: 100vh;
+    font-family: 'Figtree';
+
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: var(--light-blue);
+    padding: 20px;
+    border-radius: 0 5% 5% 0;
+}
+
+.right-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 18px;
+    margin: 200px 50px 100px 50px;
+}
+
+.copy-container {
+    font-size: 24px;
+}
+
+.cta {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.graphic-container {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 0 40px;
+}
+
+.logo-container {
+    margin: 40px 0 55px 50px;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.graphic {
+    width: 550px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.form-container {
+    display: flex;
+    margin: 60px 0;
+    font-size: 20px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 50px;
+}
+
+.form-field {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    margin: 25px 0 0 0;
+    width: fit-content;
+    padding: 10px 50px;
+    font-weight: 600;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: "Figtree", sans-serif;
+    border: 0;
+}
+
+.login {
+    width: 100%;
+    font-size: 18px;
+    font-family: "Figtree", sans-serif;
+    margin: -15px 0 0 2px;
+}
+
+.form-field > input {
+    margin-top: 6px;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 6px  ;
+    font-family: 'Figtree', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.form-field > label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor:pointer;
+    background-color: var(--blue-darker);
+}
+
+a:hover {
+    color: var(--blue-darker);
+}
