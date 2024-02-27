@@ -14,9 +14,7 @@
     --white: rgb(255, 255, 255);
 }
 
-html {
-    /* height: 100%; */
-}
+
 
 * {
     /* border: 1px solid red; */
@@ -188,4 +186,9 @@ input:focus-visible {
 
 :focus-visible {
     outline: 0px;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid var(--red);
+
 }
