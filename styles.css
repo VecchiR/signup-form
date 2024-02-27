@@ -8,11 +8,15 @@
     --blue: #004FFF;
     --light-blue: #E7F0FF;
 
-    --red: #931621;
+    --red: #e74956;
+    --green: #43b814;
     --black: #050505;
     --white: rgb(255, 255, 255);
 }
 
+html {
+    /* height: 100%; */
+}
 
 * {
     /* border: 1px solid red; */
@@ -24,8 +28,8 @@
 body {
     display: flex;
     color: var(--black);
-    height: 100vh;
     font-family: 'Figtree';
+    height: 100%;
 
 }
 
@@ -33,9 +37,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 45%;
+    min-width: 450px;
     background-color: var(--light-blue);
     padding: 20px;
     border-radius: 0 5% 5% 0;
+    margin: 0;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .right-container {
@@ -44,7 +52,8 @@ body {
     flex-direction: column;
     padding: 20px;
     font-size: 18px;
-    margin: 200px 50px 100px 50px;
+    margin: 100px 50px 50px 50px;
+    justify-content: center;
 }
 
 .copy-container {
@@ -62,16 +71,18 @@ body {
     display: flex;
     justify-content: center;
 
-    margin: 0 0 40px;
+    margin: 0 0 5%;
 }
 
 .logo-container {
-    margin: 40px 0 55px 50px;
+    margin: 40px 0 55px max(-500px, -70%);
+    display: flex;
+    justify-content: center;
 }
 
 .attribution {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 .graphic {
@@ -114,6 +125,10 @@ button {
     border: 0;
 }
 
+input {
+    border: 1px solid var(--black);
+}
+
 .login {
     width: 100%;
     font-size: 18px;
@@ -121,11 +136,11 @@ button {
     margin: -15px 0 0 2px;
 }
 
-.form-field > input {
+.form-field>input {
     margin-top: 6px;
     font-size: 20px;
     padding: 6px 10px;
-    border-radius: 6px  ;
+    border-radius: 6px;
     font-family: 'Figtree', sans-serif;
 }
 
@@ -135,16 +150,42 @@ a {
     font-weight: 600;
 }
 
-.form-field > label {
+.form-field>label {
     font-size: 16px;
     font-weight: 500;
 }
 
-button:hover {
-    cursor:pointer;
+button:hover,
+button:focus {
     background-color: var(--blue-darker);
+    /* https://smoothshadows.com/#djEsMiwyLDAuMDcsOTAsMTcsMzAsIzAzMDcxMiwjZjNmNGY2LCNmZmZmZmYsMg%3D%3D */
+    box-shadow: 8px 4px 23px rgba(3, 7, 18, 0.07),
+        30px 17px 90px rgba(3, 7, 18, 0.04);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 a:hover {
     color: var(--blue-darker);
+}
+
+/* input:valid {
+    border: 2px solid var(--green);
+} */
+
+/* input:invalid {
+    border: 1px solid var(--red);
+} */
+
+input:focus-visible {
+    border: 2px solid var(--blue-darker);
+    /* https://smoothshadows.com/#djEsMiwyLDAuMDcsOTAsMTcsMzAsIzAzMDcxMiwjZjNmNGY2LCNmZmZmZmYsMg%3D%3D */
+    box-shadow: 8px 4px 23px rgba(3, 7, 18, 0.07),
+        30px 17px 90px rgba(3, 7, 18, 0.04);
+}
+
+:focus-visible {
+    outline: 0px;
 }
