@@ -189,6 +189,6 @@ input:focus-visible {
 }
 
 input:invalid:not(:placeholder-shown) {
-    border: 1px solid var(--red);
+    border: 2px solid var(--red);
 
 }
